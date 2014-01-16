@@ -1,0 +1,114 @@
+Taches primaire:
+
+Se déplacer:
+
+Pour l'instant nous partons du principe que la base du robot ne se
+trouve pas dans la salle du coktail, que la base est le point de
+chargement des plateau.
+
+mode arrivée en salle:
+- déclenchement du mode lorsqu'il est sur sa base et prêt à repartir 
+  (plateau chargé, batterie suffisante pour effectuer un service et revenir, check up interne positif.)
+- déplcement prédéfini pour arrivée en salle.
+- fin du mode lorsqu'il arrive en salle.
+
+
+mode dehambulation: 
+- déclenchement du mode à l'arrivée dans la salle.
+- va de groupe en groupe et de table en
+  table. Cela sous-entend que le robot possède des capteurs capablent de
+  reperer des groupes de personnes.  
+- pendant le mode, le robot doit garder en mémoire les zones géographiques 
+  déjà desservie.
+- Fin du mode de dehambultion à la fin d'un timer et/ou après une diminution
+  significative du poids du plateau, ou en cas d'absence d'espace ou passer (interieur d'un groupe).
+
+mode retour à la base:
+- déclenchement lorsque le plateau est vide et/ou timer, ou en cas de detection d'anomalie.
+- en cas de déplacement impossible, envoie une demande demande d'assistance.
+- cherche le plus court chemin ne passant pas par des groupes
+- fin du mode lorsque le robot arrive à la base.
+
+mode gestion de groupe:
+- se déclenche lorsque le robot approche un groupe.
+- le robot sert le groupe.
+- doit être capable d'analyser les mouvement du groupe (ex si le groupe se place autour de lui) et d'agir en conséquence.
+- le mode prend fin lorsque le groupe est servi 
+  (c'est à dire que le robot ne trouve plus de personne dans le groupe qu'il n'est pas aller voir, ou que le groupe s'arrete de se servir).
+
+mode dirigé:
+- se déclenche lorsque lorsqu'une commande est effectuée (de la part du maitre d'hotel ou d'un convive)
+- cherche le plus court chemin ne passant pas par des groupes.
+- s'arrête lorsque la cible est atteinte.
+ 
+mode suivi:
+- se déclenche lorsqu'un serveur veux l'emmener dans un endroit non-defini (ex: reserve spéciale)
+- le robot suis le serveur
+- s'arrete lorsque le serveur le ramène à un repère connu.
+
+mode construction de carte:
+- se declenche sur commande avant la reception.
+- le robot de déplace en cartographiant la salle.
+- fin lorsque la salle est cartographiée.
+
+servir:
+
+maintient du plateau:
+- le plateau doit être maintenu droit et être stable.
+- le plateau doit éviter les obstacles et les contacts.
+- le bras doit permettre de simuler les gestes d'un serveur, il doit donc être agile.
+- les gestes doivent être fluide pour permettre à un humain de les comprendre.
+
+présentation:
+il s'agit d'un geste permettant au consommateur de comprendre qu'il peut se servir.
+
+- il doit être particulier à cette action.
+- il doit placer le plateau a bonne distance de l'humain et à la bonne hauteur 
+  (ce qui sous-entend que le robot doit pouvoir analyser la taille de la personne servie). 
+- prévoir la gestion des dechets (chose remise sur le plateau).
+- il doit comprendre le service d'une personne est terminé 
+  (ex personne ne souhaitant pas être servie ou personne ayant fins de se servir).
+
+avoir des gestes prévisibles:
+
+- la cinématique doit être continue, fluide, sans-accout.
+- le positionnement du plateau indique la direction du robot.
+- présence d'indicateurs permettant de connaitre le mode de fonctionnement du robot (lumière, forme...).
+
+Taches secondaire:
+
+être élément d'échange:
+
+- possibilité de confier un message.
+- organisation de jeu (à definir).
+- fournisseur de renseignement sur les autres convives.  
+
+se faire accepter par l'humain:
+
+
+
+
+Spec technique:
+
+taille max: 1m50
+circonférence: 3m
+
+capacité des plateaux: 10kg
+autonomie: 3h
+
+déplacement spatial:
+4 roues controlées par 8 moteurs.
+
+plateau:
+liaison parallèle pour les rotations
+liaision pour les translations
+
+communication:
+
+reconnaissance vocale et visuel.
+presence d'écran(s) d'information.
+
+software:
+base de donnée
+
+
