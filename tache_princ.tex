@@ -104,10 +104,64 @@ les points de sorties du mode sont:
 \end{itemize}
 
 \subsubsection{Mode gestion de groupe}
+Le mode de gestion de groupe est destiné au service d'un groupe de personnes. Suite à la prise de décision du robot de servir un groupe qu'il a détecté. Celui-ci rentre dans ce mode avant d'effectuer le service. Celui-ci commence par déterminer une hiérarchie dans le groupe lui permettant d'établir l'ordre le plus efficace et socialement correct pour servir les convives. La sortie du mode s'effectue une fois le service terminée.\\
+
+Les points d'entrées du mode sont :
+\begin{itemize}
+\item mode déambulation
+\end{itemize}
+
+Les points de sortie du mode sont :
+\begin{itemize}
+\item mode déambulation
+\end{itemize}
 
 \subsubsection{Mode suivi}
+Le mode suivi est un mode qui peut uniquement être activé et désactivé de façon manuelle via le mode utilisation interface.
+Celui-ci est destiné à une utilisation exceptionnelle pour des cas spéciaux.
+
+On pourra imaginer un mécanisme de sécurité implémenté dans l'interface qui permettra uniquement à des personnes habilitée d'activer ce mode de déplacement.
+Une fois le mode activer, un émetteur amovible sera libéré et mis à la disposition de la personne ayant activer le mode.
+Après activation du mode, le robot suivra cette émetteur en gardant une certain distance de sécurité, afin qu'en évitant tout se qui pourrait venir se placer dans son chemin. Cela permet donc d'emmenner le robot à n'importe quel endroit souhaité, par exemple une zone de chargement spéciale éloigné de la base du robot.\\
+
+
+Les points d'entrées du mode sont :
+\begin{itemize}
+\item mode utilisation interface
+\end{itemize}
+
+Les points de sortie du mode sont :
+\begin{itemize}
+\item mode utilisation interface
+\end{itemize}
 
 \subsubsection{Mode dirigé}
+Le mode dirigé permet au robot de faire des dessertes spéciales transmise par l'ordinateur centrale.
+Cet ordre peut avoir été passé par le maitre d'hotel tout comme par un convive, demandant à un certain robot de changer de section, ou bien d'aller deservir une table ou un groupe particulier.
+On peut aussi envisager de lui faire livrer une commande spéciale.\\
+
+Le déroulement du mode se fait comme suit:
+\begin{enumerate}
+\item Commande reçue par l'ordinateur centrale
+\item L'ordinateur centrale determine le meilleur robot pour effectuer la desserte
+\item Si besoin, le robot choisie va à sa base pour récupérer ce dont il à besoin
+\item Le robot effectue la desserte demandé\\
+\end{enumerate}
+
+
+Les points d'entrées du mode sont :
+\begin{itemize}
+\item mode déambulation
+\item mode arrivée en salle
+\item mode retour à la base
+\end{itemize}
+
+Les points de sortie du mode sont :
+\begin{itemize}
+\item mode déambulation
+\item mode arrivée en salle
+\item mode retour à la base
+\end{itemize}
 
 \subsubsection{Mode retour a la base}
 
