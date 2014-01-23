@@ -13,7 +13,7 @@ Les contraintes anthroposociales imposées à la conception d'une desserte robot
 \item[confiances :]
   \begin{enumerate}
   \item Le robot doit respecter les distances nécéssaires afin de ne pas pénétrer l'espace personnel des convives.
-  \item Le robot doit être prévisible afin de ne pas effrayer les convives et de renforcer le sentiment de sécurité à sa périphérie.
+  \item Le robot doit être compréhensible et prévisible afin de ne pas effrayer les convives et de renforcer le sentiment de sécurité à sa périphérie.
   \item Le gabarit du robot doit être soigneusement réfléchie afin de ne pas paraitre comme le dominant de l'interaction aussi bien que pour empêcher une apparence menacante.
   \end{enumerate}
 \end{description}
@@ -33,13 +33,13 @@ Les contraintes anthroposociales imposées à la conception d'une desserte robot
 
 
 \begin{description}
-\item[sensorielles :]
+\item[Sensorielles :]
   \begin{enumerate}
   \item Le niveau sonore émit par le robot ne doit pas excéder les XX (niveau sonore à déterminer) décibel.
   \item La forme du robot devra être affinée le plus possible et disposer de carénages amovibles permettant de s'adapter à différentes ambiances ainsi que la création de carénages customisé par le client, si celui-ci le souhaite.
   \item Afin de ne pas incommoder les convives et leur expérience, le robot ne devra pas dégager trop de chaleur ni d'odeur.
   \end{enumerate}
-\item[confiances :]
+\item[Confiances :]
   \begin{enumerate}
   \item Le robot devra embarquer des capteurs et le software nécéssaire au maintient des distances programmées avec les convives.
   \item Les mouvements devront être fluide, et un ensembles de mouvement plus ou moins évident devront être déterminé et implémenter afin de laisser savoir au personnes alentour les intentions du robot.
@@ -51,8 +51,39 @@ Les contraintes anthroposociales imposées à la conception d'une desserte robot
 %chaleur
 %grandeur
 
-\subsection{Faisabilité}
+\subsection{Contrainte liée aux services}
 
+
+\begin{description}
+\item[Autonomie :] Le robot doit avoir une autonomie suffisante pour
+  tenir toute la durée du service. D'après le livre "Savoir et
+  Techniques de restauration - tome 2" un buffet-cocktail dure en
+  moyenne 2h30. Ceci dit, on peut imaginer que le robot sera au moins
+  au début utilisé dans des circonstances particulière pouvant être
+  plus long et il faudrait prévoire une marge conséquente sur
+  l'autonomie.
+\item[Sécurité :] Le robot ne doit pas entrer en contact avec des humains.
+\item[Spatiale :] Le robot doit s'adapter aux conventions de densité
+  de personnes appliquée dans le milileu de la restauration:
+  \begin{itemize}
+  \item pour 20 personnes, une surface de $23m^2$ est préconisée.
+  \item pour 200 personnes, une surface de $219m^2$ est préconisée.
+  \end{itemize}
+  On compteras donc une densité d'un peu plus d'un mètre carré par
+  personne.
+\item[Hygiène :] Le plateau ne doit pas être pollué par le robot.
+\item[taille du plateau :] Le plateau fait une taille standard de
+  $55*35cm$ s'il est rectangulaire et $40cm$ de diamètre s'il est
+  circulaire.
+\item[Isolation du plateau :] La temperature du plateau ne doit être
+  influencé par le robot (ex: actionneur sous le plateau qui
+  chaufferait)
+\item[Homogénéité du service :] Le robot doit servir toutes les zones
+  géographiques de la salle.
+\item[Charge plateau :] Le robot doit pouvoir porter au moins $10Kg$
+  pour pouvoir assurer le service et aider les serveurs.
+
+\end{description}
 %sécurité
 %durabilité
 %batterie
