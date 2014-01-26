@@ -12,6 +12,7 @@
 \usepackage[top=7em, bottom=7em, left=7em, right=7em]{geometry}
 \usepackage{wrapfig}
 \usepackage{fancyhdr}
+\usepackage[nottoc, notlof, notlot]{tocbibind} % biblio dans table des matières
 \fancyhf{}
 \renewcommand{\footrulewidth}{0.05em}
 %entete
@@ -27,7 +28,7 @@
                            Clément \textsc{BRISSET}}% Auteur
 \newcommand{\reportsubject}{Environnement, démarche, et conception} % Sujet
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-&\newcommand{\siecle}[1]{\textsc{\romannumeral #1}ème}
+\newcommand{\siecle}[1]{\textsc{\romannumeral #1}ème}
 \setlength{\parskip}{1ex} % Espace entre les paragraphes
 
 
@@ -70,4 +71,11 @@
 
 \input{etude_cas}
 \end{onehalfspace}
+
+
+\nocite{*} 
+\renewcommand{\refname}{Bibliographie}
+\bibliography{biblio}{}
+\bibliographystyle{ieeetr}
+
 \end{document}
