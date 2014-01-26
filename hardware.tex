@@ -4,6 +4,63 @@
 
 \subsection{Le bras}
 
-\subsubsection{Ses Capacités}
+Pour assurer les mouvements de service et pour ranger le plateau lors
+des déplacement un bras robotisé avec trois degrés de liberté est
+suffisant pour reprendre les gestes d'un serveur, il devra cepandant
+avoir comme caractéristique la possibilité de se retracter pour ranger
+le plateau en position de déplacement.
+
+Le plateau disposera également de capteur à ultrasons et/ou infrarouge
+pour permettre de positionner le plateau aux bonnes distances par
+rapport aux groupes ou aux personnes, soit un peu moins d'un mètre.
+Cela implique cependant que le robot arrive à faire la différence entre 
+une personne désirant se servir et une personne n'ayant pas vu le robot 
+et ayant une trajectoire dangeureuse.
+
+le plateau comme annoncé dans les contraintes liées au services a
+traditionnellement un diamètre de $40cm$ que nous avons décidé de
+conserver. Comme il doit être composé d'une matière disposant d'un
+bonne isolation thermique, une base en acier inoxydable nous semble
+être une solution cohérente.
+
+Un capteur de pression devra être installé sur le plateau pour déterminer 
+a quel moment le plateau doit être recharger.
 
 \subsection{Le corps}
+
+\subsubsection{Chassis}
+Nous avons choisis de donner au robot un corps cylindrique d'un
+diamètre légerement supérieur $45cm$. l'idée étant qu'en position de
+déplacement, le plateau s'emboite légèrement dans le corps du robot.
+La matière composant l'exterieur du chassis devras être relativement
+souple pour minimiser un impact qui n'aurait pas pu être éviter. 
+
+\subsubsection{Base mobile}
+Pour ce qui est de la base mobile, nous avons choisi l'utilisation de
+roue omnidirectionnelle, car les déplacements du robot demandent une
+grande précision du fait de l'évolution en milieu humain, par contre
+ce choix impose un sol totalement plat, ce qui exclut d'office tout
+service en milieu exterieur.
+
+\subsubsection{Sécurité}
+Pour répondre aux contraintes de sécurités, nous nous somme inspirés
+du robot numéro 1 (voir le chapitre sur l'état de l'art) et nous avons
+choisis de coupler des capteur infrarouges à des capteurs à ultrasons
+disposé tout autour du chassis pour permettre au robot d'éviter tout
+contact. 
+
+\subsubsection{Interface}
+une surface tactile est prévue pour permettre à un utilisateur
+d'interagir avec le robot (par exemple pour obtenir des information).
+
+\subsubsection{autonomie}
+
+\subsubsection{Caméra}
+
+Outre les différents capteurs déjà cité pour le plateau ou la sécurité
+du robot, une ou plusieurs caméras doit être installée sur le robot pour l'aider
+d'une part à repérer des groupes de personnes, et d'autre part une
+fois que le robot commence à servir le groupe, à éviter que le robot
+aille servir trop de fois la même personne.
+
+\subsubsection{}
