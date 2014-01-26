@@ -27,7 +27,7 @@
                            Clément \textsc{BRISSET}}% Auteur
 \newcommand{\reportsubject}{Environnement, démarche, et conception} % Sujet
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-\newcommand{\siecle}[1]{\textsc{\romannumeral #1}ème}
+&\newcommand{\siecle}[1]{\textsc{\romannumeral #1}ème}
 \setlength{\parskip}{1ex} % Espace entre les paragraphes
 
 
@@ -64,8 +64,10 @@
 
 \input{design}
 
-\include{etat_art}
+\chapter*{Annexe}
+\addcontentsline{toc}{chapter}{Annexe}
+\input{etat_art}
 
-\include{etude_cas}
+\input{etude_cas}
 \end{onehalfspace}
 \end{document}
