@@ -12,6 +12,7 @@
 \usepackage[top=7em, bottom=7em, left=7em, right=7em]{geometry}
 \usepackage{wrapfig}
 \usepackage{fancyhdr}
+\usepackage[nottoc, notlof, notlot]{tocbibind} % biblio dans table des matières
 \fancyhf{}
 \renewcommand{\footrulewidth}{0.05em}
 %entete
@@ -70,4 +71,11 @@
 
 \input{etude_cas}
 \end{onehalfspace}
+
+
+\nocite{*} 
+\renewcommand{\refname}{Bibliographie}
+\bibliography{biblio}{}
+\bibliographystyle{ieeetr}
+
 \end{document}
