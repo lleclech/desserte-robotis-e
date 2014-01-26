@@ -210,9 +210,40 @@ interfaces du robot. Dans ce cas le robot doit cesser de se deplacer.
 
 \subsection{Servir}
 
+Comme le mouvement, le service est un acte essentiel que doit pouvoir réaliser la desserte robotisée.
+ La différence entre le service qu’un humain pourrait réaliser et celui que réalise le robot ne doit
+ pas être remarqué par les invités du cocktail. Il est donc indispensable que ce service doit être le
+ plus naturel possible. C’est dans la fluidité de l’action et la maintenue du plateau que le robot 
+pourra créer une confiance envers les invités.
+
 \subsubsection{Maintenir le plateau}
+
+Pour maintenir le plateau efficacement, il doit rester le plus droit possible. Que ça soit lors du service ou lors de la déambulation, le plateau reste toujours le plus stable possible. 
+
+Lors des déplacements, le plateau doit être en sécurité pour éviter d’être renversé. Il doit donc avoir une position de sécurité ou pouvoir être rangé par le robot de telle sorte qu’il ne subisse pas de chocs.
+
+Lors d’un service dans un groupe, le plateau doit être le plus stable possible. Ainsi, les invités peuvent prendre avec confiance leurs aliments ou leurs verres sur le plateau.
+
+%Peut être faire un petit point sur les deux modes
 
 \subsubsection{Presenter le plateau}
 
+La présentation d’un plateau se fait au niveau des coudes de l’invité qui se sert. C’est-à-dire que le plateau peut se trouver très haut, pour les grandes personnes, ou très bas, pour les enfants ou les personnes en fauteuil roulant. Pour prendre une moyenne, il faudrait que le plateau puisse se trouver entre 65cm au-dessus du sol et 1m30.
+
+Le plateau n’a pas besoin de s’avancer dans un groupe lorsqu’il se présente. Il doit simplement se trouver à une hauteur idéale pour que la personne qui se fait servir puisse prendre ce qu’il y a sur le plateau sans être dérangé. S’il fait un geste en avant pour s’introduire dans un groupe, il risque de déranger des personnes en discussion parfois confidentiel. Le plateau a donc seulement un mouvement vertical pour le service.
+
+La présentation à une durée limitée. Si les personnes ne se servent pas, le robot doit comprendre qu’ils ne sont pas à la recherche d’apéritifs et donc qu’il doit aller à la recherche d’un autre groupe. Si par contre les invités se servent, il faut que le robot attende que tout le monde soit servi et qu’il ait le droit de se retirer. Pour cela, il sait détecter quand personne ne prend d’éléments sur son plateau et a un timer qui vérifie qu’il ne reste pas inutilement à un endroit et qui lui dit de rester un certain moment avant de se retirer.
+
+% peut être faire un subsection levé et descente du plateau de façon vertical et savoir quand se retirer ?
+
 \subsection{Communication}
  
+Pour permettre une bonne gestion de l’interaction entre l’homme et la machine, le robot doit pouvoir communiquer avec les invités. C’est dans son interface qu’il se démarquera des autres robots sur le marché.
+
+Cette communication doit être basée sur la possibilité de se renseigner sur le cocktail en général. Il doit donc pouvoir donner les informations sur ce qui est et va être servi au cours du cocktail. De plus il doit savoir exactement de quoi son composé les différents mets.
+
+Pour parfaire son utilité, il doit pouvoir indiquer à un invité un moyen de connaitre un autre invité. La réussite de cette fonctionnalité peut se faire par le fait d’amener l’invité vers celui qu’il cherche ou lui donné un indice pour le trouver comme une photo ou un nom.
+
+Il peut aussi se rendre lui-même image de communication subtile en ayant la possibilité de changer de coque pour s’adapter au cocktail. Bien que le robot doive toujours rester noir pour rester dans l’ambiance d’un cocktail, il peut s’ajouter un logo ou un symbole pour le mettre en harmonie avec l’évènement.
+
+%Pareil que pour les deux sous partie ultérieurs.
